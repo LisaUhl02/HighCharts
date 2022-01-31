@@ -1,2 +1,2 @@
 # HighCharts
-#npm install highcharts --save
+npm install highcharts --save
