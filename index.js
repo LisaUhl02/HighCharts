@@ -55,17 +55,17 @@ Highcharts.chart('container', {
                 },
                 {
                     name: "Fotoreihe",
-                    y: 10.4,
+                    y: 9.5,
                     drilldown: "Fotoreihe",
                 },
                 {
                     name: "Nachrichtensendung",
-                    y: 14.52,
+                    y: 14.2,
                     drilldown: "Nachrichtensendung"
                 },
                 {
                     name: "Mockumentary",
-                    y: 35.4,
+                    y: 35.72,
                     drilldown: "Mockumentary"
                 },
                 {
@@ -75,7 +75,7 @@ Highcharts.chart('container', {
                 },
                 {
                     name: "Stop-Motion",
-                    y: 41.5,
+                    y: 41.2,
                     drilldown: "Stop-Motion"
                 }
             ]
