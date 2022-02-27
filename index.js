@@ -29,6 +29,7 @@ Highcharts.chart('container', {
     plotOptions: {
         series: {
             borderWidth: 0,
+            showInNavigator: true,
             dataLabels: {
                 enabled: true,
                 format: '{point.y:.1f} Stunden'
@@ -38,7 +39,7 @@ Highcharts.chart('container', {
 
     tooltip: {
         headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}Stunden</b> insgesamt<br/>'
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f} Stunden</b> insgesamt<br/>'
     },
 
     series: [
@@ -46,10 +47,16 @@ Highcharts.chart('container', {
             name: "Medium",
             colorByPoint: true,
             data: [
+
+                {
+                    name: "Podcast",
+                    y: 8,
+                    drilldown: "Podcast"
+                },
                 {
                     name: "Fotoreihe",
                     y: 10.4,
-                    drilldown: "Fotoreihe"
+                    drilldown: "Fotoreihe",
                 },
                 {
                     name: "Nachrichtensendung",
